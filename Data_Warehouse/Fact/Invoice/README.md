@@ -8,7 +8,7 @@
 ## Columns
 
 | Name | Type | Nullable | Description |
-| ---- | ---- | ------- | -------- | -------- | ------- | ------- |
+| ---- | ---- | ------- | -------- |
 | sales_key | integer | false | Surrogate Key |
 | Customer No | varchar(15) | false | FK to DimCustomer |
 | Item No | varchar(31) | true | FK to DimItem |
