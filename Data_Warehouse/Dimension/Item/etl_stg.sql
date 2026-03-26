@@ -32,7 +32,7 @@ BEGIN
         I.SELNGUOM                                   AS selling_uom,
         H.BASEUOFM                                   AS base_uom,
         D.EQUOMQTY                                   AS equiv_qty,
-        SYSUTCDATETIME()                              AS load_ts
+        SYSUTCDATETIME()                             AS load_ts
     FROM raw_gp.iv00101 I
     LEFT JOIN raw_gp.iv40400 C
         ON I.ITMCLSCD = C.ITMCLSCD

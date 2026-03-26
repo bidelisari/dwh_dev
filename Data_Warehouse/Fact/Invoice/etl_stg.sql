@@ -1,11 +1,11 @@
 USE [DW_DEV]
 GO
-/****** Object:  StoredProcedure [etl].[rebuild_stg_sales]    Script Date: 17/03/2026 13:56:47 ******/
+
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
 GO
-ALTER PROCEDURE [etl].[rebuild_stg_sales]
+CREATE PROCEDURE [etl].[rebuild_stg_sales]
 AS
 BEGIN
     SET NOCOUNT ON;
@@ -13,17 +13,17 @@ BEGIN
     TRUNCATE TABLE stg.sales;
 
 	INSERT INTO stg.sales (
-		[Customer No],
-		[Item No],
-		[Trx No],
-		[Trx Date],
-		[Trx Type],
-		[Invoice Amount],
-		[Disc Total Amount],
-		[DPP Invoice],
-		[Sales Nett],
-		[Gross Profit],
-		table_source,
+		[Customer No]		,
+		[Item No]			,
+		[Trx No]			,
+		[Trx Date]			,
+		[Trx Type]			,
+		[Invoice Amount]	,
+		[Disc Total Amount]	,
+		[DPP Invoice]		,
+		[Sales Nett]		,
+		[Gross Profit]		,
+		table_source		,
 		load_ts
 	)
 	SELECT

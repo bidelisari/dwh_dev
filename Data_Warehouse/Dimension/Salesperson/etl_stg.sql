@@ -5,7 +5,7 @@ SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
 GO
-ALTER   PROCEDURE [etl].[rebuild_stg_salesperson]
+CREATE PROCEDURE [etl].[rebuild_stg_salesperson]
 AS
 BEGIN
     SET NOCOUNT ON;

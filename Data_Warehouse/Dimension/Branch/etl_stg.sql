@@ -1,6 +1,6 @@
 USE [DW_DEV]
 GO
-/****** Object:  StoredProcedure [etl].[rebuild_stg_branch]    Script Date: 25/03/2026 14:42:44 ******/
+
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON

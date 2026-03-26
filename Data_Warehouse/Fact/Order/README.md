@@ -3,7 +3,7 @@
 ## Overview
 
 - Stores all unposted order transactions. 
-- Filter SOPTYPE =2 and VOIDSTTS = 0
+- Filter SOPTYPE = 2 and VOIDSTTS = 0
 
 ## Columns
 

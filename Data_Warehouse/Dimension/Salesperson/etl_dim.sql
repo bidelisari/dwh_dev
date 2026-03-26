@@ -71,7 +71,7 @@ BEGIN
     FROM stg.salesperson s
     LEFT JOIN dim.salesperson d
         ON d.[salesman id] = s.[Salesman ID]
-       AND d.is_current = 1
+        AND d.is_current = 1
     WHERE
         d.[salesman id] IS NULL
         OR (

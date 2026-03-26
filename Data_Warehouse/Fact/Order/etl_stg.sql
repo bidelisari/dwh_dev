@@ -1,6 +1,6 @@
 USE [DW_DEV]
 GO
-/****** Object:  StoredProcedure [etl].[rebuild_stg_order]    Script Date: 17/03/2026 14:01:08 ******/
+
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -13,19 +13,19 @@ BEGIN
     TRUNCATE TABLE stg.[order];
 
 	INSERT INTO stg.[order] (
-		[Customer No],
-		[Item No],
-		[Order No],
-		[PO No],
-		[Site],
-		[Order Date],
-		[Req.Ship Date],
-		[Order Qty],
-		[Fulfil Qty],
-		[Base Qty],
-		[Disc Amount],
-		[Order Amount],
-		table_source,
+		[Customer No]	,
+		[Item No]		,
+		[Order No]		,
+		[PO No]			,
+		[Site]			,
+		[Order Date]	,
+		[Req.Ship Date]	,
+		[Order Qty]		,
+		[Fulfil Qty]	,
+		[Base Qty]		,
+		[Disc Amount]	,
+		[Order Amount]	,
+		table_source	,
 		load_ts
 	)
 	SELECT

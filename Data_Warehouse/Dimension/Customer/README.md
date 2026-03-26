@@ -15,7 +15,7 @@
 | Salesman ID | varchar(15) | true | FK to DimSalesperson |
 | Branch ID | varchar(15) | true | FK to DimBranch |
 | Divisi | nvarchar(100) | true | Divisi |
-| Sub.Div | nvarchar(100) | true | Sub.Div |
+| Sub.Div | nvarchar(100) | true | Sub Divisi |
 | Credit Limit | numeric(19, 5) | true | Credit Limit |
 | Created | datetime | true | Created at |
 | ACTIVE | varchar(3) | false | Flagging Active |

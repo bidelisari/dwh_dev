@@ -1,11 +1,11 @@
 USE [DW_DEV]
 GO
-/****** Object:  StoredProcedure [etl].[load_fact_sales]    Script Date: 17/03/2026 13:57:41 ******/
+
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
 GO
-ALTER   PROCEDURE [etl].[load_fact_sales]
+CREATE PROCEDURE [etl].[load_fact_sales]
 AS
 BEGIN
     SET NOCOUNT ON;

@@ -1,7 +1,6 @@
 USE [DW_DEV]
 GO
 
-/****** Object:  Table [dim].[branch]    Script Date: 25/03/2026 14:39:25 ******/
 SET ANSI_NULLS ON
 GO
 
@@ -9,15 +8,15 @@ SET QUOTED_IDENTIFIER ON
 GO
 
 CREATE TABLE [dim].[branch](
-	[branch_sk] [int] IDENTITY(1,1) NOT NULL,
-	[Branch ID] [varchar](15) NOT NULL,
-	[Cabang] [varchar](31) NULL,
-	[Region] [varchar](21) NULL,
-	[Lead Time] [varchar](15) NULL,
-	[is_active] [bit] NOT NULL,
-	[effective_from] [datetime2](7) NOT NULL,
-	[effective_to] [datetime2](7) NULL,
-	[load_ts] [datetime2](7) NOT NULL,
+	[branch_sk] 		[int] IDENTITY(1,1) NOT NULL,
+	[Branch ID] 		[varchar](15) NOT NULL,
+	[Cabang]    		[varchar](31) NULL,
+	[Region]    		[varchar](21) NULL,
+	[Lead Time] 		[varchar](15) NULL,
+	[is_active] 		[bit] NOT NULL,
+	[effective_from]	[datetime2](7) NOT NULL,
+	[effective_to] 		[datetime2](7) NULL,
+	[load_ts] 			[datetime2](7) NOT NULL,
 PRIMARY KEY CLUSTERED 
 (
 	[branch_sk] ASC
